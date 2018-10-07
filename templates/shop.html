@@ -21,7 +21,7 @@ Roboshop
                         placeholder="Email" id="email">
                     <div id="robot">
                         <!-- <p>Select Robot</p> -->
-                        <select class="q col-xs-10 col-sm-6 col-md-4 col-lg-3" required name="robo">
+                        <select class="q col-xs-6 col-sm-6 col-md-4 col-lg-3" required name="robo">
                             {%for robot in bot%}
                             <option value="{{robot.name}}">{{robot.name}}</option>
                             {%endfor%}

@@ -1,0 +1,27 @@
+.q{
+height: 100px;
+width: 250px;
+padding: 30px;
+margin: 30px;
+background-color: #E91E63;
+border:8px solid #03A9F4;
+/* border-radius: 30%; */
+font-size: 30px;
+color:rgb(255, 255, 255) ;
+border-bottom: none;
+border-top: none;
+}
+.q:hover{
+    background-color: #FF4081;
+    border:8px solid #FFFFFF;
+}
+#buyform{
+    float: left;
+    margin: 5%;
+    margin-top: 0px;
+       
+}
+.q:focus{
+    background-color: #2196F3;
+    border:8px solid #E91E63;
+}
