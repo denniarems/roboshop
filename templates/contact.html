@@ -1,0 +1,26 @@
+{%extends "index.html"%}
+{%block title%}
+Roboshop
+{%endblock%}
+{%block body%}
+<div class="container">
+    <div id="tit">
+        <h1>RoboBay</h1>
+        <h3>Get Robots,Make Your Life Easyer</h3>
+    </div>
+    <div class="row">
+
+        <form method="POST" id="fb" action="/feedback">
+            <input required class=" c w" type="text" id="name" name="name" placeholder="Your name..">
+            <input required class="c w" type="email" id="email" name="email" placeholder="Your Email..">
+            <textarea required class="c t" id="subject" name="subject" placeholder="Write something.."></textarea> <br>
+            <input class="c b" type="submit" value="Submit">
+        </form>
+
+
+
+    </div>
+
+</div>
+
+{%endblock%}

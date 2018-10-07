@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title%}{%endblock%}</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/_navbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/shop.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/last.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/contact.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">RoboBay</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div id="toppad"></div>
+
+    {%block body%}{%endblock%}
+
+    <div id="toppad"></div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <a class="navbar-brand footernav" href="https://t.me/denniarems">More information</a>
+    </nav>
+
+    <script src="{{ url_for('static',filename='script/jquery.js') }}"></script>
+    <script src="{{ url_for('static',filename='script/bootstrap.min.js') }}"></script>
+    <!-- <script src="{{ url_for('static',filename='script/script.js') }}"></script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+{%extends "index.html"%}
+{%block title%}
+Roboshop
+{%endblock%}
+{%block body%}
+<div class="container">
+    <div id="tit">
+        <h1>RoboBay</h1>
+        <h3>Get Robots,Make Your Life Easyer</h3>
+    </div>
+    <div class="row">
+
+        <form id="buyform" method="POST" action="/buy">
+
+            <div class="container">
+
+                <div class="row" style="margin-left: 5%">
+                    <input type="text" name="name" class=" q col-xs-10 col-sm-6 col-md-4 col-lg-3" required placeholder="Full Name"
+                        id="name">
+                    <input type="email" name="email" class="q col-xs-10 col-sm-6 col-md-4 col-lg-3" required
+                        placeholder="Email" id="email">
+                    <div id="robot">
+                        <!-- <p>Select Robot</p> -->
+                        <select class="q col-xs-10 col-sm-6 col-md-4 col-lg-3" required name="robo">
+                            {%for robot in bot%}
+                            <option value="{{robot.name}}">{{robot.name}}</option>
+                            {%endfor%}
+                        </select>
+                    </div>
+                    <div id="payment">
+                        <!-- <p>Payment Mode</p> -->
+                        <select class="q col-xs-10 col-sm-6 col-md-4 col-lg-3" required name="payment">
+                            <option value="btc">Bitcoin</option>
+                            <option value="cc">CreditCard</option>
+                            <option value="nb">NetBanking</option>
+                            <option value="xrp">Ripple Pay</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="q col-xs-10 col-sm-6 col-md-4 col-lg-3" id="count" type="number" name="count"
+                            disabled placeholder="Count*">
+                    </div>
+                    <button id="buy" class="q btn btn-primary col-xs-10 col-sm-6 col-md-4 col-lg-3">Order Now</button>
+                </div>
+                <p> *Due to high demand,Every order is limited to one.</p>
+            </div>
+
+
+        </form>
+
+    </div>
+</div>
+</div>
+
+{%endblock%}

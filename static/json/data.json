@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "name": "Dong",
+        "Energy": "1",
+        "Power": "1",
+        "Price": "120$",
+        "link": "1.png"
+    },
+    {
+        "id": "2",
+        "name": "Alexia",
+        "Energy": "2",
+        "Power": "1",
+        "Price": "180$",
+        "link": "2.png"
+    },
+    {
+        "id": "3",
+        "name": "Jaleesa",
+        "Energy": "2",
+        "Power": "3",
+        "Price": "280$",
+        "link": "3.png"
+    },
+    {
+        "id": "4",
+        "name": "Nathan",
+        "Energy": "3",
+        "Power": "1",
+        "Price": "210$",
+        "link": "4.png"
+    },
+    {
+        "id": "5",
+        "name": "Jed",
+        "Energy": "3",
+        "Power": "2",
+        "Price": "290$",
+        "link": "5.png"
+    },
+    {
+        "id": "6",
+        "name": "Jade",
+        "Energy": "3",
+        "Power": "3",
+        "Price": "340$",
+        "link": "6.png"
+    },
+    {
+        "id": "7",
+        "name": "Tanesha",
+        "Energy": "1",
+        "Power": "4",
+        "Price": "290$",
+        "link": "7.png"
+    },
+    {
+        "id": "8",
+        "name": "Theressa",
+        "Energy": "3",
+        "Power": "2",
+        "Price": "290$",
+        "link": "8.png"
+    },
+    {
+        "id": "9",
+        "name": "Adrienne",
+        "Energy": "1",
+        "Power": "4",
+        "Price": "290$",
+        "link": "9.png"
+    },
+    {
+        "id": "10",
+        "name": "Cecila",
+        "Energy": "4",
+        "Power": "3",
+        "Price": "430$",
+        "link": "10.png"
+    }
+]

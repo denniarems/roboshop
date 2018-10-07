@@ -1,0 +1,40 @@
+{%extends "index.html"%}
+{%block title%}
+RoboMarket
+{%endblock%}
+{%block body%}
+
+
+
+<div class="container">
+    <div id="tit">
+        <h1>RoboBay</h1>
+        <h3>Get Robots,Make Your Life Easyer</h3>
+    </div>
+    <div class="row">
+        {%for robot in bot%}
+        <div class="column col-xs-6 col-sm-4 col-md-4 col-lg-4">
+
+            <div class=" panel panel-default">
+                <div class=" tempbox panel-body">
+                    <img class="img-responsive" src="/static/images/{{robot.link}}" alt={{robot.name}}>
+                    <div class="overlay">
+                        <div class="text">
+                            <h3>{{robot.name}}</h3>
+                            <h5>Energy : {{robot.Energy}}</h5>
+                            <h5>Power : {{robot.Power}}</h5>
+                            <h5>Price : {{robot.Price}}</h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        {%endfor%}
+
+    </div>
+
+</div>
+
+{%endblock%}
