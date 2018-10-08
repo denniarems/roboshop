@@ -7,3 +7,6 @@ body{
     height: 55px;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #eaeaea;
+}

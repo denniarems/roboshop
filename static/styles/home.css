@@ -2,6 +2,7 @@
 #tit{
     text-align: center;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 
@@ -53,7 +54,4 @@ img{
   opacity: 1;
 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   border-radius: 60%;
-}
-.col-xs-12{
-    
 }
